@@ -23,19 +23,99 @@
 </head>
 
 <body>
+  <header>
+    <div class="container header-container">
+      <div class="logo">gtd.</div>
+      <div class="search-box">
+        <form name="search-form" method="GET" action="https://google.lt/">
+          <div class="input-group">
+            <input type="search" name="query" placeholder="Search">
+            <button type="submit"></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </header>
+  <div class="hero">
+    <div class="container">
+      <h1>Hello, we're gtd</h1>
+    </div>
+  </div>
+  <div class="content">
+    <div class="container flex-no-wrap">
+      <div class="img-item">
+        <img src="tile.png">
+      </div>
+      <div class="img-item">
+        <img src="tile.png">
+      </div>
+      <div class="img-item">
+        <img src="tile.png">
+      </div>
+    </div>
+    <div class="container">
+      <h2>How it started</h2>
+      <p>Lorem Ipsum refers to a dummy block of text that is often
+        used in publishing and graphic design to fill gaps in the page
+        before the actual words are put into the finished product. Lorem ipsum
+        resembles Latin but has no real meaning.
+        If you are working inside Microsoft Word and need some
+        filler text to test the layout of fonts and other design elements of your document.
+      </p>
+    </div>
+    <div class="container team">
+      <div class="member">
+        <img src="tile.png">
+        <div>
+          <h3>Lisa</h3>
+          <a href="mailto:lisa@gtd.co">lisa@gtd.co</a>
+        </div>
+      </div>
+      <div class="member">
+        <img src="tile.png">
+        <div>
+          <h3>Daniele</h3>
+          <a href="mailto:daniele@gtd.co" class="v-list">daniele@gtd.co</a>
+          <a href="tel:1234567890" class="v-list">(123) 456-7890</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-column">
+        <h2>Team</h2>
+        <span>Lisa</span>
+        <span>Daniele</span>
+        <span>Brian</span>
+        <span>Join in!</span>
+      </div>
+      <div class="footer-column">
+        <h2>Learn More</h2>
+        <span class="v-list">Manifesto</span>
+        <span class="v-list">Works</span>
+        <span class="v-list">Stories</span>
+      </div>
+      <div class="footer-column">
+        <h2>Meet Us</h2>
+        <span class="v-list">Studio</span>
+        <span class="v-list">Community</span>
+        <span class="v-list">Workshops</span>
+      </div>
+      <div class="footer-column">
+        <h2>Contact</h2>
+        <a href="#" class="v-list">Twitter</a>
+        <a href="#" class="v-list">Facebook</a>
+        <a href="#" class="v-list">Instagram</a>
+      </div>
+    </div>
+  </footer>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>

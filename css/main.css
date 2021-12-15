@@ -260,4 +260,175 @@ textarea {
     page-break-after: avoid;
   }
 }
+/* AND THE TEST BEGINS :-)*/
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  background: #474747;
+  color: #fff;
+}
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .logo{
+  text-align: center;
+  font-size: 42px;
+  font-family: "ui-sans-serif", sans-serif;
+}
+header .search-box{
+  padding: 20px 0;
+  position: relative;
+}
+header .search-box input{
+  padding-left: 35px;
+  width: 230px;
+  border-radius: 4px;
+}
+header .search-box button {
+  background: none;
+  border: none;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  cursor: pointer;
+}
+button[type="submit"]::after {
+  content: '\1F50D';
+}
+/*hero*/
+.hero{
+  background: linear-gradient(rgba(255, 195, 4, 0.5), rgba(255, 195, 4, 0.5)), url("herotexture.jpeg") repeat 0 50%;
+  background-size: cover;
+  width: 100%;
+}
+.hero .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  height: 60vh;
+}
+.hero h1{
+  font-size: 6vw;
+}
+.content .flex-no-wrap{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.content .img-item{
+  max-width: 33%;
+  padding: 20px 10px;
+}
+.content .img-item img{
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.content h2{
+  color: #eeca16;
+  text-align: center;
+  font-size: 28px;
+  line-height: 0.5;
+}
+.content p{
+  text-align: center;
+  padding: 0 20px;
+  font-size: 14px;
+}
+.team{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team img{
+  width:100%;
+  max-width: 250px;
+  border-radius: 50%;
+}
+.team .member{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 0;
+}
+.team .member h3{
+  color: #eeca16;
+  text-align: center;
+  line-height: 0;
+  font-size: 24px;
+}
+.team .member a{
+  color: #222;
+  text-decoration: none;
+  text-align: center;
+}
+.v-list {
+  display: block;
+}
+/*footer*/
+footer{
+  background: #474747;
+  border-top: 20px solid #eeca16;
+  padding-bottom: 20px;
+}
+.footer-container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer h2{
+  color: #eeca16;
+  font-size: 24px;
+  font-weight: 300;
+}
+footer span, footer a{
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 800px){
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .team{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .team .member{
+    flex-direction: row;
+    align-items: center;
+  }
+  .team .member h3{
+    margin: 12px auto;
+  }
+  .team .member div{
+    margin-left: 10px;
+  }
+  .flex-no-wrap {
+    margin-top: -170px;
+  }
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  }
+  .hero h1{
+    font-size: 4vw;
+  }
+}
 
